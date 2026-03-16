@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.calculadora.calculadora.utils.OperacaoUtils;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators.StringIdGenerator;
-
 // Quem conta a lógica de negócio da aplicação é a classe de serviço, ou seja, ela é responsável por realizar as operações matemáticas e retornar os resultados para o controlador. O controlador, por sua vez, é responsável por receber as requisições HTTP, chamar os métodos do serviço e retornar as respostas para o cliente. A separação entre controlador e serviço é uma boa prática de design de software, pois permite uma melhor organização do código e facilita a manutenção e evolução da aplicação.
 
 // @Service é uma anotação do Spring que indica que a classe é um serviço, ou seja, ela contém a lógica de negócio da aplicação. Ela é usada para marcar a classe como um componente gerenciado pelo Spring, permitindo que ela seja injetada em outras partes da aplicação, como controladores ou outros serviços.
