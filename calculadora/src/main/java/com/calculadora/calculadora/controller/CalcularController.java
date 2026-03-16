@@ -48,5 +48,11 @@ public class CalcularController {
       return calcularService.divisao(n1, n2);
 
    }
+   @GetMapping("/taboada/{n1}")
+   public String taboada(@PathVariable double n1) {
+
+      return calcularService.taboada(n1);
+
+   }
 
 }

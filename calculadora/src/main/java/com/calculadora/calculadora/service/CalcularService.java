@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.calculadora.calculadora.utils.OperacaoUtils;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators.StringIdGenerator;
 
 // Quem conta a lógica de negócio da aplicação é a classe de serviço, ou seja, ela é responsável por realizar as operações matemáticas e retornar os resultados para o controlador. O controlador, por sua vez, é responsável por receber as requisições HTTP, chamar os métodos do serviço e retornar as respostas para o cliente. A separação entre controlador e serviço é uma boa prática de design de software, pois permite uma melhor organização do código e facilita a manutenção e evolução da aplicação.
 
@@ -44,6 +45,18 @@ public class CalcularService {
         }
 
         return "O resultado da divisão é: " + resultado;
+
+    }
+
+    
+    public String taboada(double n1) {
+        String resultado = "";
+       
+        for (int i = 1; i <= 10; i++) {
+            resultado += n1 + " x " + i + " = " + (n1 * i) + "<br>" ;
+        }
+
+        return "Taboada de " + n1 +  " é: " + "<br>"  + resultado ;
 
     }
 }
