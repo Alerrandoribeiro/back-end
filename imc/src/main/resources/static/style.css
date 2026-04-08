@@ -1,0 +1,130 @@
+:root{
+  --bg-grad-1:#4facfe;
+  --bg-grad-2:#00f2fe;
+
+  --container-bg:#ffffff;
+  --texto-principal:#222;
+  --texto-label:#333;
+
+  --input-borda:#ccc;
+  --input-foco:#4facfe;
+  --input-foco-sombra:rgba(79, 172, 254, 0.3);
+
+  --botao-bg:#4facfe;
+  --botao-hover:#2d8cf0;
+
+  --resultado-bg:#f4f8ff;
+
+  --sucesso:#22c55e;
+  --erro:#ef4444;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body */
+body {
+  background: linear-gradient(135deg, var(--bg-grad-1), var(--bg-grad-2));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container */
+.container {
+  background-color: var(--container-bg);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* título */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--texto-principal);
+  font-size: 28px;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* labels */
+label {
+  margin-bottom: 8px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--texto-label);
+}
+
+/* inputs */
+input {
+  padding: 12px;
+  border: 1px solid var(--input-borda);
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: var(--input-foco);
+  box-shadow: 0 0 8px var(--input-foco-sombra);
+}
+
+/* botão */
+button {
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--botao-bg);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--botao-hover);
+}
+
+/* resultado */
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--resultado-bg);
+  text-align: center;
+  font-size: 18px;
+  color: var(--texto-principal);
+  font-weight: bold;
+}
+
+/* erro */
+.erro {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--erro);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* esconder elementos */
+.hidden {
+  display: none;
+}
