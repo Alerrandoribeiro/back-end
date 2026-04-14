@@ -63,5 +63,4 @@ public class Fabricante {
         return "Fabricante [id=" + id + ", nome=" + nome + ", paisOrigem=" + paisOrigem + "]";
     }
     
-    
 }
