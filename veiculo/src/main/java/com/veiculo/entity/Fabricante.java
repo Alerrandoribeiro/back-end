@@ -1,4 +1,5 @@
 package com.veiculo.entity;
+// aqui cria atributos e tabelas no banco
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
