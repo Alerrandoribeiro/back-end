@@ -8,8 +8,11 @@ import org.springframework.stereotype.Repository;
 
 import com.veiculo.entity.Fabricante;
 
+// aqui já inclui o crud padrao
 @Repository
 public interface FabricanteRepository extends JpaRepository <Fabricante, Long> {
 
-    
+    boolean existsByNome(String nome);
+    String findByNome(String nome);
+    String findByPaisOrigem(String PaisOrigem);
 }
